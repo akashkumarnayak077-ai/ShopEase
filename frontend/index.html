@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase | Product Catalogue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">ShopEase<span>.</span></div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#products">Products</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <p class="tagline">WELCOME TO SHOPEASE</p>
+            <h1>Find Your Next<br>Favourite Product.</h1>
+            <p class="hero-text">
+                Explore our collection of quality products at great prices.
+            </p>
+            <a href="#products" class="shop-btn">Explore Products</a>
+        </div>
+    </section>
+
+    <main class="container" id="products">
+        <div class="section-heading">
+            <div>
+                <p class="tagline">OUR COLLECTION</p>
+                <h2>Popular Products</h2>
+            </div>
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search products..."
+            >
+        </div>
+
+        <div id="productList" class="product-grid">
+            <p>Loading products...</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 ShopEase. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
