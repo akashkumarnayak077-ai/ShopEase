@@ -244,3 +244,120 @@ footer {
     }
 }
 
+/* ============================= */
+/* CSS THEME GENERATOR           */
+/* ============================= */
+
+:root {
+    --primary-color: #635bff;
+    --page-bg: #f8f9fc;
+    --surface-color: #ffffff;
+    --text-color: #20243a;
+    --hero-start: #e9eaff;
+    --hero-end: #f3f0ff;
+    --footer-color: #20243a;
+    --font-family: Arial, sans-serif;
+}
+
+body {
+    background: var(--page-bg);
+    color: var(--text-color);
+    font-family: var(--font-family);
+}
+
+.navbar,
+.product-card,
+.details-layout {
+    background: var(--surface-color);
+}
+
+.navbar a {
+    color: var(--text-color);
+}
+
+.logo span,
+.tagline,
+.price,
+.back-link {
+    color: var(--primary-color);
+}
+
+.hero {
+    background: linear-gradient(
+        120deg,
+        var(--hero-start),
+        var(--hero-end)
+    );
+}
+
+.shop-btn,
+.details-btn {
+    background: var(--primary-color);
+}
+
+.product-info p {
+    color: var(--text-color);
+    opacity: 0.75;
+}
+
+footer {
+    background: var(--footer-color);
+}
+
+.theme-generator {
+    padding: 35px 8%;
+    background: var(--surface-color);
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.theme-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.theme-content h2 {
+    margin-bottom: 10px;
+}
+
+.theme-content p:not(.tagline) {
+    color: var(--text-color);
+    opacity: 0.75;
+}
+
+.theme-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+#generateThemeBtn {
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#generateThemeBtn:hover {
+    opacity: 0.85;
+}
+
+#themeName {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .theme-content {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .theme-controls {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

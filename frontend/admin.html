@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase | Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <header class="admin-navbar">
+        <div class="logo">ShopEase<span>.</span></div>
+        <span>Admin Dashboard</span>
+    </header>
+
+    <main class="dashboard-container">
+
+        <section class="dashboard-heading">
+            <div>
+                <p class="tagline">STORE MANAGEMENT</p>
+                <h1>Visitor Analytics</h1>
+                <p>Monitor traffic and understand your visitors.</p>
+            </div>
+
+            <button id="refreshVisitorsBtn">Refresh Data</button>
+        </section>
+
+        <section class="stats-grid">
+            <div class="stat-card">
+                <p>Total Visits</p>
+                <h2 id="totalVisitors">0</h2>
+            </div>
+
+            <div class="stat-card">
+                <p>Countries</p>
+                <h2 id="uniqueCountries">0</h2>
+            </div>
+
+            <div class="stat-card">
+                <p>Simulated Visits</p>
+                <h2 id="simulatedVisitors">0</h2>
+            </div>
+        </section>
+
+        <section class="visitor-section">
+            <h2>Recent Visitors</h2>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>IP Address</th>
+                            <th>Country</th>
+                            <th>Visit Time</th>
+                            <th>Type</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="visitorTableBody">
+                        <tr>
+                            <td colspan="4">Loading visitors...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="admin.js"></script>
+</body>
+</html>
